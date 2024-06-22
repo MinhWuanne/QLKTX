@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Management Interface</h1>
+    <div>
+        <h2>Get All Students</h2>
+        <button onclick="getAllUsers()">Get Students</button>
+        <pre id="all-users"></pre>
+    </div>
+    <div>
+        <h2>Get Student By ID</h2>
+        <input type="number" id="get-user-id" placeholder="Student ID" aria-label="Student ID">
+        <button onclick="getUserById()">Get Student</button>
+        <pre id="user-details"></pre>
+    </div>
+    <div>
+        <h2>Create Student</h2>
+        <input type="text" id="create-user-image-path" placeholder="Image Path" aria-label="Image Path">
+        <input type="text" id="create-user-msv" placeholder="Student ID (MSV)" aria-label="MSV">
+        <input type="text" id="create-user-name" placeholder="Name" aria-label="Name" required>
+        <input type="date" id="create-user-birthday" placeholder="Birthday" aria-label="Birthday" required>
+        <input type="text" id="create-user-sex" placeholder="Sex" aria-label="Sex" required>
+        <input type="text" id="create-user-phone-number" placeholder="Phone Number" aria-label="Phone Number" required>
+        <input type="text" id="create-user-class" placeholder="Class" aria-label="Class" required>
+        <button onclick="createUser()">Create Student</button>
+    </div>
+    <div>
+        <h2>Update Student</h2>
+        <input type="number" id="update-user-id" placeholder="Student ID" aria-label="Student ID">
+        <input type="text" id="update-user-image-path" placeholder="Image Path" aria-label="Image Path">
+        <input type="text" id="update-user-msv" placeholder="Student ID (MSV)" aria-label="MSV">
+        <input type="text" id="update-user-name" placeholder="Name" aria-label="Name">
+        <input type="date" id="update-user-birthday" placeholder="Birthday" aria-label="Birthday">
+        <input type="text" id="update-user-sex" placeholder="Sex" aria-label="Sex">
+        <input type="text" id="update-user-phone-number" placeholder="Phone Number" aria-label="Phone Number">
+        <input type="text" id="update-user-class" placeholder="Class" aria-label="Class">
+        <button onclick="updateUser()">Update Student</button>
+    </div>
+    <div>
+        <h2>Delete Student</h2>
+        <input type="number" id="delete-user-id" placeholder="Student ID" aria-label="Student ID">
+        <button onclick="deleteUser()">Delete Student</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
